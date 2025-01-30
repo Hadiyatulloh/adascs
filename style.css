@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Henny+Penny&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA@8..144,-3,96.2,240,-94,88,497&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Henny+Penny&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA@8..144,-3,96.2,240,-94,88,497&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    background-color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header {
+    width: 1394px;
+    text-align: center;
+}
+
+.nav {
+    width: 1400px;
+    background-color: rgb(187, 176, 157);
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    font-size: 20px;
+    gap: 80px;
+    display: flex;
+    text-shadow: 1px 1px 1px rgb(93, 92, 92);
+}
+
+.nav h1 {
+    font-family: Pacifico;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.nav button {
+    width: 180px;
+    padding: 7px;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    background-color: black;
+}
+
+.section1 {
+    height: 1000px;
+    width: 1394px;
+    margin-top: 150px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 50px;
+}
+
+.section1 img {
+    animation-name: xadado;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    border: 0.5px solid whitesmoke;
+    height: 1000px;
+    box-shadow: 5px 3px 15px -1px gray;
+}
+
+.section1div {
+    animation-name: dream;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    text-shadow: 1.7px 1.7px 1px gray;
+}
+
+.section1div button {
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 9px;
+    width: 200px;
+    background-color: black;
+    box-shadow: 5px 3px 15px -1px gray;
+}
+
+.section1div button a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes xadado {
+    0% {
+        margin-top: -10px;
+    }
+    50% {
+        margin-top: 10px;
+    }
+    100% {
+        margin-top: -10px;
+    }
+}
+
+@keyframes dream {
+    0% {
+        margin-top: 10px;
+    }
+    50% {
+        margin-top: -10px;
+    }
+    100% {
+        margin-top: 10px;
+    }
+}
+
+.section3 {
+    width: 1394px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section3 h1 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.section3 button {
+    margin-right: 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 9px;
+    width: 200px;
+    background-color: black;
+    box-shadow: 5px 3px 15px -1px gray;
+}
+
+.section3 button a {
+    text-decoration: none;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: white;
+}
+
+.dark-mode button a {
+    color: black;
+}
+
+.dark-mode #abc {
+    color: black;
+}
+
+.dark-mode .section3 h1 a {
+    color: white;
+}
+
+.section3button button {
+    width: 200px;
+    height: 60px;
+}
+
+.navbuttonla button {
+    width: 100px;
+    height: 50px;
+}
+
+.on .section1 img {
+    transform: translate(-780px);
+    transition: all 2s;
+}
+
+.on .section1div {
+    transform: translate(600px);
+    transition: all 2s;
+}
+
+.positionbottom .section1 img {
+    transform: translate(-390px);
+    transition: all 2s;
+}
+
+.positionbottom .section1div {
+    transform: translate(320px, 1100px);
+    transition: all 2s;
+}
+
+.positionbottom .section3 {
+    transition: all 2s;
+    margin-top: 1180px;
+}
+
+.positiontop .section1 img {
+    transform: translate(-390px, 1000px);
+    transition: all 2s;
+}
+
+.positiontop .section1div {
+    transform: translate(340px);
+    transition: all 2s;
+}
+
+.positiontop .section3 {
+    transition: all 2s;
+    margin-top: 1180px;
+}
+
+.positionleft .section1 img {
+    transform: translate(0px);
+    transition: all 2s;
+}
+
+.positionleft .section1div {
+    transform: translate(0px);
+    transition: all 2s;
+}
